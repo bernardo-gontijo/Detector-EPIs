@@ -53,7 +53,9 @@ Os datasets não são armazenados neste repositório. Consulte as páginas origi
 Projeto_EPI/
 ├── configs/
 │   └── data.example.yaml
+├── avaliar_modelo.py
 ├── criar_dataset_mvp.py
+├── iniciar_avaliacao.bat
 ├── iniciar_treinamento.bat
 ├── preparar_dataset.py
 ├── requirements.txt
@@ -254,9 +256,19 @@ Durante o desenvolvimento, prefira `best.pt` para validação, teste e inferênc
 
 O conjunto `test` não é utilizado durante o treinamento. Avalie-o somente depois de escolher o modelo e as configurações finais:
 
-```powershell
-yolo detect val model="runs_epi/yolo11n_epi_mvp/weights/best.pt" data="dataset_epi_mvp/data.yaml" split=test device=0 plots=True
+No Windows, execute com duplo clique:
+
+```text
+iniciar_avaliacao.bat
 ```
+
+Também é possível iniciar pelo terminal:
+
+```powershell
+python avaliar_modelo.py
+```
+
+O script usa `runs_epi/yolo11n_epi_mvp/weights/best.pt`, avalia exclusivamente o split `test` e salva gráficos, matriz de confusão e `metricas_teste.json` dentro de `runs_epi/avaliacao_final_test/`.
 
 Não reajuste repetidamente o modelo com base no resultado de teste. Caso isso aconteça, o conjunto deixa de representar uma avaliação final imparcial.
 
@@ -303,8 +315,3 @@ O valor `conf=0.35` é um ponto inicial. Um valor menor aumenta a quantidade de 
 - o desempenho de validação pode não representar ambientes reais;
 - a associação entre EPI e pessoa ainda não foi implementada.
 
-## Licenciamento
-
-Defina uma licença específica para o código antes de publicar o repositório, por exemplo MIT, Apache-2.0 ou outra apropriada ao seu contexto. A licença do código não substitui as licenças e obrigações de atribuição dos datasets.
-#   D e t e c t o r - E P I s  
- 
