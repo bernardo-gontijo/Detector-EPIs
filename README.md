@@ -306,3 +306,5 @@ O valor `conf=0.35` é um ponto inicial. Um valor menor aumenta a quantidade de 
 ## Licenciamento
 
 Defina uma licença específica para o código antes de publicar o repositório, por exemplo MIT, Apache-2.0 ou outra apropriada ao seu contexto. A licença do código não substitui as licenças e obrigações de atribuição dos datasets.
+#   D e t e c t o r - E P I s  
+ 
