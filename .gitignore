@@ -1,0 +1,67 @@
+# Ambientes virtuais locais
+/.venv/
+/venv/
+/env/
+/ultralytics/
+/label-studio/
+/label-studio-py*/
+
+# Cache e artefatos do Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Datasets e arquivos compactados
+/datasets_original/
+/dataset_epi/
+/dataset_epi_mvp/
+/datasets/
+/data/
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Treinamentos, pesos e modelos exportados
+/runs/
+/runs_epi/
+/weights/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+*.tflite
+*.pb
+*.mlmodel
+*.mlpackage
+
+# Dados locais do Label Studio
+/.labelstudio/
+/label-studio-data/
+/mydata/
+*.sqlite3
+*.sqlite3-journal
+
+# Segredos e configurações locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.temp
+~$*
+
+# Editores e sistema operacional
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini

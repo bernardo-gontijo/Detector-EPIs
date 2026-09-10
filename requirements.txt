@@ -1,0 +1,3 @@
+# Instale primeiro a versão do PyTorch adequada à sua CPU/GPU:
+# https://pytorch.org/get-started/locally/
+ultralytics==8.4.146

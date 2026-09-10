@@ -1,0 +1,13 @@
+# Copie este arquivo para a raiz do seu dataset e ajuste o caminho.
+path: C:/caminho/para/dataset_epi_mvp
+
+train: images/train
+val: images/val
+test: images/test
+
+nc: 3
+
+names:
+  0: helmet
+  1: goggles
+  2: gloves
