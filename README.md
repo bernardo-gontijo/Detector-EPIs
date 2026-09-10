@@ -284,17 +284,6 @@ O valor `conf=0.35` é um ponto inicial. Um valor menor aumenta a quantidade de 
 - **mAP@50–95:** avaliação mais rigorosa da classificação e do posicionamento das caixas;
 - **Background na matriz:** previsões sem correspondência com uma anotação ou objetos reais que não receberam uma previsão.
 
-## Boas práticas
-
-- Não versionar datasets, pesos ou resultados completos diretamente no Git;
-- publicar pesos selecionados em **GitHub Releases** ou usar **Git LFS** quando necessário;
-- manter `train`, `val` e `test` separados;
-- testar o modelo em imagens próprias e de câmeras diferentes;
-- revisar falsos positivos e falsos negativos antes de acrescentar novas imagens;
-- registrar a origem, a versão e a licença dos dados utilizados;
-- não armazenar imagens sensíveis de trabalhadores em repositório público;
-- evitar afirmar conformidade de segurança: este MVP detecta objetos, não confirma o uso correto do EPI.
-
 ## Limitações atuais
 
 - O resultado de capacetes é inferior ao de óculos e luvas;
