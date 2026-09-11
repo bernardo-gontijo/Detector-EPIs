@@ -4,7 +4,6 @@ import torch
 from ultralytics import YOLO
 
 
-# Use "teste" primeiro. Depois, troque para "completo".
 MODO = "teste"
 
 PASTA_PROJETO = Path(__file__).resolve().parent
